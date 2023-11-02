@@ -3,34 +3,25 @@
 ## Directory
 [User Story](#user-story)
 
-[Acceptance Criteria](#acceptance-criteria)
+[Description](#description)
+
+[Walkthrough](#video-walkthrough)
 
 ## User Story
-AS A manager at an internet retail company
+As a manager at an internet retail company, I want a back end for my e-commerce website that uses the latest technologies so that my company can compete with other e-commerce companies.
 
-I WANT a back end for my e-commerce website that uses the latest technologies
+## Description
+This code functions as the back end for an e-commerce site. It allows the user to create, read, update, and delete important product information stored in a MySQL database. The database contains **four** data tables: 
+    
+`Category` for storing product category names and IDs
 
-SO THAT my company can compete with other e-commerce companies
+`Product` for storing product name, stock, price, and category IDs
+    
+`ProductTag` for storing associations between products and tags
+    
+`Tag` for storing tag names and IDs
 
-## Acceptance Criteria
-GIVEN a function Express.js API
+The application utilizes an Express.js API that is configured to use Sequelize to interact with the MySQL database. 
 
-WHEN I add my database name, MySQL usernmae, and MySQL password to an environment variable file
-
-THEN I am able to connect to a database using Sequelize
-
-WHEN I enter schema and seed commands
-
-THEN a development database is created and is seeded with test-data
-
-WHEN I enter the command to invoke the applicatoin
-
-THEN my server is started and the Sequelize models are synced to the MySQL database
-
-WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-
-THEN the data for each of these routes is displayed in a formatted JSON
-
-WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-
-THEN I am able to successfully create, update, and delete data in my database
+## Video Walkthrough
+https://drive.google.com/file/d/1QAPMY9DIQ6FPkZODFGOERYMeJ5k8C8Ux/view

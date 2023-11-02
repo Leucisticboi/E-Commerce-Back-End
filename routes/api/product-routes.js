@@ -55,14 +55,6 @@ router.get('/:id', async (req, res) => {
 
 // create new product
 router.post('/', async (req, res) => {
-  /* req.body should look like this...
-    {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
-    }
-  */
  try {
   const { product_name, price, stock, tagIds } = req.body;
 
@@ -143,7 +135,7 @@ router.delete('/:id', async (req, res) => {
       },
     });
 
-    return res.json(productData);
+    return res.json("Product deleted!");
   } catch (error) {
     console.error('Error deleting product data:', error);
     res.status(500).send('Internal Service Error');

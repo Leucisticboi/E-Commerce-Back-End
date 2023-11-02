@@ -94,7 +94,7 @@ router.delete('/:id', async (req, res) => {
       },
     });
   
-    return res.json(tagData);
+    return res.json("Tag deleted!");
   } catch (error) {
     console.error('Error deleting tag data:', error);
     res.status(500).send('Internal Service Error');
